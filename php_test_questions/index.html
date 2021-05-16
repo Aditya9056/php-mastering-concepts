@@ -1,0 +1,66 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<h1 style="color: cyan">Predict the Script</h1>
+<p id="p1" class="js">
+	jQuery's syntax is designed to make it easier to navigate a document, select
+	DOM elements, create animations, handle events, and develop Ajax applications.
+</p>
+<p id="p2">
+	jQuery also provides capabilities for developers to create plug-ins on top of
+	the JavaScript library. This enables developers to create abstractions for
+	low-level interaction and animation, advanced effects and high-level,
+	theme-able widgets.
+</p>
+<p id="p3">
+	The modular approach to the jQuery library allows the creation of powerful
+	dynamic web pages and Web applications.
+</p>
+<div id="div1" class="js">
+	jQuery, at its core, is a DOM (Document Object Model) manipulation library.
+	The DOM is a tree-structure representation of all the elements of a Web page
+	and jQuery simplifies the syntax for finding, selecting, and manipulating
+	these DOM elements. For example, jQuery can be used for finding an element in
+	the document with a certain property (e.g. all elements with an h1 tag),
+	changing one or more of its attributes (e.g. color, visibility), or making it
+	respond to an event (e.g. a mouse click).>
+</div>
+<div id="div2">
+	Query also provides a paradigm for event handling that goes beyond basic DOM
+	element selection and manipulation. The event assignment and the event
+	callback function definition are done in a single step in a single location in
+	the code.
+</div>
+<p id="p4" class="js">
+	jQuery also aims to incorporate other highly used JavaScript functionality
+	(e.g. fade ins and fade outs when hiding elements, animations by manipulating
+	CSS properties).
+</p>
+<p id="p5">
+	The jQuery library provides simple syntax for adding event handlers to the DOM
+	using JavaScript, rather than adding HTML event attributes to call JavaScript
+	functions. Thus, it encourages developers to completely separate JavaScript
+	code from HTML markup.
+</p>
+
+<script>
+	// $(document).ready(function () {
+	// 	$('p').slice(2).css('background-color', 'yellow');
+	// 	$('h1').nextUntil('#p4').css('background-color', 'lightgreen');
+	// 	$('p').not('.js').css('background-color', 'red');
+	// });
+	// $(document).ready(function () {
+	// 	$('p').slice(2).css('background-color', 'yellow');
+	// 	$('h1').nextUntil('#p4').css('background-color', 'lightgreen');
+	// 	$('p').eq('.js').css('background-color', 'red');
+	// });
+	$(document).ready(function () {
+		$('p').slice(2).css('background-color', 'yellow');
+		$('#p4').prevUntil('h1').css('background-color', 'lightgreen');
+		$('p').not('.js').css('background-color', 'red');
+	});
+
+	// $(document).ready(function () {
+	// 	$('p').slice(2).css('background-color', 'yellow');
+	// 	$('#h1').nextUntil('#p4').css('background-color', 'lightgreen');
+	// 	$('p').not('.js').css('background-color', 'red');
+	// });
+</script>
